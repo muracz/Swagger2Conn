@@ -1,3 +1,4 @@
+
 ## Swagger2Conn 
 
 A small conversion script to turn a swagger.json definition into a REST Conn object definition ( json ) format. 
