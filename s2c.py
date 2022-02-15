@@ -16,13 +16,6 @@ def LoadJsonData(Link):
 
     return data
 
-def LoadJsonObject(Path):
-    f = open(sys.argv[2])
-    obj = json.loads(f.read(), object_hook=lambda d: SimpleNamespace(**d))
-    f.close
-    
-    return obj
-    
 # Find all variables and map them to Automic varas
 def GetVariables(endPoints):
     Variables = dict()
