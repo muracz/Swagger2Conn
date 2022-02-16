@@ -4,6 +4,9 @@ from types import SimpleNamespace
 #  TODO 
 #  - find duplicate {} variables , change and map them differently {client_nr} for removing clients for example
 
+# Connection template 
+ConnTemplate = {"data":{"conn":{"general_attributes":{"type":"CONN","name":"","description":"","minimum_ae_version":"11.2"},"connection_attributes":{"platform":"CIT","job_type":"WEBSERVICEREST","sub_type":"RESTCONNECTION"},"documentation":[{"Docu":[""]}],"extended_values":[{"name":"webserviceEndpoint","type":"4","value":"&basePath#"}]}},"path":"CONN"}
+
 ## Functions 
 
 def LoadJsonData(Link):
@@ -41,9 +44,6 @@ def ReplaceVariables(endPoints, Variables):
         yield endPoint
 
 # Logic 
-
-# Connection template 
-ConnTemplate = {"data":{"conn":{"general_attributes":{"type":"CONN","name":"","description":"","minimum_ae_version":"11.2"},"connection_attributes":{"platform":"CIT","job_type":"WEBSERVICEREST","sub_type":"RESTCONNECTION"},"documentation":[{"Docu":[""]}],"extended_values":[{"name":"webserviceEndpoint","type":4,"value":"&basePath#"}]}},"path":"CONN"}
 
 if len(sys.argv) < 2:
     print("Usage: s2c.py url object_name [path] ") 
