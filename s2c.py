@@ -47,7 +47,6 @@ def ReplaceVariables(endPoints, Variables):
     for endPoint in endPoints:
         for k, v in Variables.items():
             endPoint = endPoint.replace(k, v)
-        # print(endPoint)
         yield endPoint
 
 # Logic
