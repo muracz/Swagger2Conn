@@ -8,7 +8,7 @@ import urllib.request
 
 # Connection template
 ConnTemplate = {"data": {"conn": {"general_attributes": {"type": "CONN", "name": "", "description": "", "minimum_ae_version": "11.2"}, "connection_attributes": {"platform": "CIT",
-                                                                                                                                                                 "job_type": "WEBSERVICEREST", "sub_type": "RESTCONNECTION"}, "documentation": [{"Docu": [""]}], "extended_values": [{"name": "webserviceEndpoint", "type": "4", "value": "&basePath#"}]}}, "path": "CONN"}
+                                                                                                                                                                 "job_type": "WEBSERVICEREST", "sub_type": "RESTCONNECTION"}, "documentation": [{"Docu": [""]}], "extended_values": [{"name": "webserviceEndpoint", "type": "4", "value": "&BASEPATH#"}]}}, "path": "CONN"}
 
 # Functions
 
@@ -38,7 +38,7 @@ def GetVariables(endPoints):
             for groupNum in range(0, len(match.groups())):
                 k = "{" + match.group(1) + "}"
                 v = "&" + match.group(1) + "#"
-                Variables[k] = v
+                Variables[k] = v.upper()
 
     return Variables
 
