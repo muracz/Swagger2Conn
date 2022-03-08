@@ -34,8 +34,8 @@ def GetVariables(endPoints):
     for endPoint in endPoints:
         matches = re.finditer(regex, endPoint, re.DOTALL)
 
-        for matchNum, match in enumerate(matches):
-            for groupNum in range(0, len(match.groups())):
+        for _matchNum, match in enumerate(matches):
+            for _groupNum in range(0, len(match.groups())):
                 k = "{" + match.group(1) + "}"
                 v = "&" + match.group(1) + "#"
                 Variables[k] = v.upper()
