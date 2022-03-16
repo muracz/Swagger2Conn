@@ -18,3 +18,7 @@ s2c.py url object_name [path]
 ### Requirements
 
 Python 3  
+
+### Liability 
+
+Product shipped as is.  No warranty or liability is assumed for the use of this solution.
