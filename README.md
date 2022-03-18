@@ -5,6 +5,9 @@ A small conversion script to turn a swagger.json definition into a REST Conn obj
 
 The script converts automatically **{variables}** into **&variables#** documenting this in the Docu tab. 
 
+# Sponsor
+ [Philipp Elmer Membership](https://membership.philippelmer.com) 
+
 ### Usage
 
 ```
